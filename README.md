@@ -19,11 +19,12 @@ Change the settings.php file: specify database settings and rspamd hosts wich wi
 
 Since messages can be large, I recommend you to increase the maximum post size of your web server (in apache it's the post_max_size parameter).
 
-I didn’t do any authorization to access web GUI so if you need it you can configure it using htpasswd for example - https://httpd.apache.org/docs/2.4/howto/auth.html
+I didn’t make any authorization to access web GUI so if you need it you can configure it using htpasswd for example - https://httpd.apache.org/docs/2.4/howto/auth.html
 
 Configure the Metadata Exporter module on each rspamd host by adding the rule like this:
 
-```rules {
+```
+rules {
    QUARANTINE_1 {
       backend = "http";
       url = "http://quarantine_site/metadata.php";
