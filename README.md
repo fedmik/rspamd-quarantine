@@ -31,7 +31,8 @@ Configure the Metadata Exporter module on each rspamd host by adding the rule li
       formatter = "default";
       meta_headers = true;
    }
-```}
+}
+```
 
 The "selector" parameter can be "is_spam" or "is_reject". In the first case it will quarantine all messages with "reject" or "add header" action, in the second case it will quarantine only messages with "reject" action.
 
