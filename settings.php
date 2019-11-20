@@ -9,6 +9,7 @@
 	$servername = "mysql-host";
 	$username = "mysql-user";
 	$password = "mysql-password";
+	$dbname = "mysql-database-name";
 	
 	/*
 	* IP Addresses of rspamd hosts which are allowed to store messages in the quarantine

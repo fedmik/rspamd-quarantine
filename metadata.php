@@ -12,7 +12,7 @@
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 	} 
-	$conn->select_db("metadata");
+	$conn->select_db($dbname);
 	
 	//building query string
 	$qinsert = "insert into data set timestamp = now()";

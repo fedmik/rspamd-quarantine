@@ -6,7 +6,7 @@
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 	}
-	$conn->select_db("metadata");
+	$conn->select_db($dbname);
 	
 	$searchmode = false;
 	if(isset($_POST["searchquery"]) && $_POST["searchquery"])
